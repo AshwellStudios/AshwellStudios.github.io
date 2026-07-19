@@ -158,7 +158,7 @@ document.getElementById("surveyForm").addEventListener("submit", async function(
 
     try{
 
-        const response = await fetch("http://localhost:3000/send-feedback",{
+        const response = await fetch("https://nova-feedback.v01ddwalking.workers.dev", {
 
             method:"POST",
 

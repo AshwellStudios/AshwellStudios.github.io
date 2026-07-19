@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI Tester Feedback</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="survey-container">
+
+    <img src="logo.png" class="logo" alt="Nova AI">
+
+    <h1>Nova AI Tester Feedback</h1>
+
+    <p class="subtitle">
+        Thank you for helping test Nova AI.
+        Your feedback directly influences future development.
+    </p>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <form id="surveyForm">
+
+        <!-- Question 1 -->
+
+        <div class="question active">
+
+            <h2>1. What's your name?</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+        </div>
+
+        <!-- Question 2 -->
+
+        <div class="question">
+
+            <h2>2. How has your experience with testing Nova been?</h2>
+
+            <textarea
+                id="experience"
+                rows="6"
+                placeholder="Tell us about your experience..."
+                required
+            ></textarea>
+
+        </div>
+
+        <!-- Question 3 -->
+
+        <div class="question">
+
+            <h2>3. Are there any noticeable problems you've noticed during testing?</h2>
+
+            <textarea
+                id="issues"
+                rows="6"
+                placeholder="Describe any bugs or problems..."
+                required
+            ></textarea>
+
+        </div>
+
+        <!-- Question 4 -->
+
+        <div class="question">
+
+            <h2>4. Are you happy with the development direction Nova is going?</h2>
+
+            <label class="radio">
+
+                <input
+                    type="radio"
+                    name="happy"
+                    value="Yes"
+                    required
+                >
+
+                Yes
+
+            </label>
+
+            <label class="radio">
+
+                <input
+                    type="radio"
+                    name="happy"
+                    value="No"
+                >
+
+                No
+
+            </label>
+
+        </div>
+
+        <!-- Question 5 -->
+
+        <div class="question" id="question5">
+
+            <h2>
+                5. If you answered "No", what do you think needs changing?
+            </h2>
+
+            <textarea
+                id="changes"
+                rows="6"
+                placeholder="Leave blank or write N/A if you answered Yes."
+            ></textarea>
+
+        </div>
+
+        <!-- Question 6 -->
+
+        <div class="question">
+
+            <h2>6. What are your suggestions for the future of Nova?</h2>
+
+            <textarea
+                id="future"
+                rows="6"
+                placeholder="Share your ideas..."
+                required
+            ></textarea>
+
+        </div>
+
+        <!-- Thank You -->
+
+        <div class="question">
+
+            <h2>🎉 Thank You!</h2>
+
+            <p>
+                Click Submit below to send your feedback.
+            </p>
+
+        </div>
+
+    </form>
+
+    <div class="buttons">
+
+        <button id="prevBtn" type="button">
+            Previous
+        </button>
+
+        <button id="nextBtn" type="button">
+            Next
+        </button>
+
+        <button id="submitBtn" type="submit" form="surveyForm">
+            Submit Feedback
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Node modules
+**/node_modules/
+# Environment variables (contains your webhook URL)
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code (optional)
+.vscode/
+
+# Build output (if you later use React/Vite)
+dist/
+build/
+
+# Coverage reports
+coverage/
